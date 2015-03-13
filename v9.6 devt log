@@ -70,12 +70,12 @@ Zelda - Ocarina Of Time
   o	fix the slight screen "jump" when entering/exit pause menu (should help other games as well)
 Misc.
 •	revert an old change to improve game speed e.g. Quake II etc
-•	implement enhance xy scale factor logic to fix right / bottom frame border gap for certain games
+•	implement dynamic xy scale factor plus to fine tune specific game e.g.
   o	Killer Instinct Gold, Resident Evil II, Virtual Pro Wrestling 2, Jet Force Gemini, Pokemon Stadium 2, Tarzan,
   Dragon Storm, Zelda Ocarina of Time, Zelda Majoras' Mask, WWF No Mercy, WCW Revenge, WCW World Tour, Quake II, PPL,
   NFL Blitz 2000, NFL Blitz Special Edition, Conker, Power Rangers, Aidyn Chronicles, All-Star Baseball 2000/1,
   Mario Tennis, Indy Racing 2000, NFL QBC 99 / 98, ISS 2000, Bomberman64U/E, Turok Rage Wars, Turok Seeds of Evil,
-  Xena Warrior Princess, Ken Griffey Slugfest, Lego Racers
+  Xena Warrior Princess, Ken Griffey Slugfest, Lego Racers, Bomberman Hero, Evangelion, Banjo Kazooie
 •	rewrite thin line handling codes e.g.
   o	fix Jet Force Gemini old regression for weapon energy bar
   o	fix Perfect Dark thick aiming line for Co-operative mode
@@ -89,10 +89,10 @@ Misc.
   o	fix Bomberman64 missing noise for Bomberman planet hologram in intro cutscene
   o	fix Starfox64 missing noise during intro cutscene and scene transition
 •	implement removal of black frame borders
-  o	40 Winks, Battlezone, Bomberman64U/E, Evangelion, Hexen, Indy Racing 2000, Mystical Ninja, Tarzan, TGR2,
-  Wildwater, Win Back
+  o	40 Winks, Battlezone, Bomberman64U/E, Evangelion, Hexen, Indy Racing 2000, Mystical Ninja, Tarzan,  Wildwater,
+  Win Back
 •	rewrite color image clearing / fb set logic
-  o	fix previous game fb color image not cleared in current game  e.g. TSUMI TO BATSU after Zelda OOT pause menu or
+  o	fix previous game fb color image not cleared in current game e.g. TSUMI TO BATSU after Zelda OOT pause menu or
   Toys Story kill enemy
 •	disable moving / dragging screen when rom is loaded(OddMlan bug report)
 •	fix no audio trying to load non-existent savestate
