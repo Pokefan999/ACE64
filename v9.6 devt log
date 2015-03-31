@@ -17,6 +17,8 @@ Conker BFD
 •	fix the thin rect lines around Conker against certain ground texture
 •	fix left frame border gap e.g. Scaredy Birdy motionblur cutscene
 •	fix right frame border gap
+Cruis’N World
+•	fix popping audio
 DerbyStallion 64
 •	fix flashram game save, cheat no longer required
 Evangelion
@@ -49,6 +51,8 @@ Killer Instinct Gold
   o	set 32bit to "NO"
 Knife Edge
 •	fix game double speed
+Mario Golf
+•	fix  training screen black frame corruption when selecting hole to play(fast forward select)
 MarioParty
 •	fix intro cutscene bg image vi width bug before game starts
 MarioParty2
@@ -71,6 +75,7 @@ Perfect Dark
 •	fix camspy flickering top / bottom frame border
 Pilot Wings 64
 •	remove vi height fix (no longer required) for top frame border gap
+•	enhance clear buffer fix so that photos on EverFrost & other levels are not cleared
 Quake 64
 •	fix long delay before gameplay starts
 •	fix intro popping music at max VI/s
@@ -93,19 +98,18 @@ Zelda – Majoras' Mask
   o	fix the slight screen "jump" when entering/exit pause menu (should help other games as well)
 Zelda - Ocarina Of Time 
 •	fix long delay in pause menu, subscreen delay cheat no longer required
-•	fix right / bottom frame border gap in Zelda pause menu portrait
+•	fix bilinear frame border line gap on Link’s pause menu portrait
 •	revert an old change
   o	fix the slight screen "jump" when entering/exit pause menu (should help other games as well)
 Misc.
 •	revert an old change to improve game speed e.g. Quake II etc
 •	implement dynamic xy scale factor plus to fine tune specific game auto adjust for different resolution and aspect ratio changes e.g.
-  o	40 Winks, Aidyn Chronicles, All-Star Baseball 2000/1, Armorines Project S., Armymen AirCombat, Armymen Sarge 2,
-    Banjo Kazooie, Bomberman Hero, Bomberman64U/E, Conker, Dragon Storm, Evangelion, F1 Pole Position 64, Flying Dragon,
-    Hexen, ISS 2000, Indy Racing 2000, Jet Force Gemini, Ken Griffey Slugfest, Killer Instinct Gold, Lego Racers,
-    Mario Party 3, Mario Tennis, Ms. Pac-Man MM, NFL Blitz 2000, NFL Blitz Special Edition, NFL QBC 99 / 98,
-    Ogre Battle 64, Perfect Dark, Pilot Wings 64,Pokemon Stadium 2, Power Rangers, PPL, Quake II, Resident Evil II,
-    Starcraft, SuperRobotSpirits, Tarzan, Turok Rage Wars, Turok Seeds of Evil, V-Rally, Virtual Pro Wrestling 2,
-    WCW Revenge, WCW World Tour, WWF No Mercy, Xena Warrior Princess, Zelda Majoras' Mask, Zelda Ocarina of Time
+  o	40 Winks, Aidyn Chronicles, All-Star Baseball 2000/1, Armorines Project S., Armymen AirCombat, Armymen Sarge 2, Banjo Kazooie, Bomberman Hero,
+  o	Bomberman64U/E, Conker, Donald Duck, Dragon Storm, Evangelion, F1 Pole Position 64, Flying Dragon, Hexen, ISS 2000, Indy Racing 2000,
+  o	Jet Force Gemini, Ken Griffey Slugfest, Killer Instinct Gold, Lego Racers, Mario Party 3, Mario Tennis, MRC, Ms. Pac-Man MM, Mystical Ninja,
+  o	NFL Blitz 2000, NFL Blitz Special Edition, NFL QBC 99 / 98, Ogre Battle 64, Perfect Dark, Pilot Wings 64,Pokemon Stadium 2, Power Rangers,
+  o	PPL, Quake II, Resident Evil II, Starcraft, SuperRobotSpirits, Tarzan, Turok Rage Wars, Turok Seeds of Evil, V-Rally, Virtual Pro Wrestling 2,
+  o	WCW Revenge, WCW World Tour, WWF No Mercy, Xena Warrior Princess, Zelda Majoras' Mask, Zelda Ocarina of Time
 •	rewrite thin line handling codes
   o	fix Jet Force Gemini old regression for weapon energy bar
   o	fix Perfect Dark thick aiming line for Co-operative mode
@@ -133,4 +137,13 @@ Misc.
 •	implement dynamic xy ratio to auto adjust fixes for different resolution changes
 •	add new 1400x1050 (4:3) resolution
 •	fix Pokemon Stadium 2 stadium battle hang regression
+•	fix image VI width corruption regression after frame transition for expansion pak
+  o	e.g. Rayman 2, Donald Duck
+•	fix Cuis’n World regression where the intro N logo get cutoff if rom is started again within the same emu session
+•	remove winproc override and window_changed variable (no longer required)
+•	remove unreliable CheckDRAMSize, get directly from core
+•	cleanup and refactor audio initialization codes and get rdram size directly from core instead of ini file
+•	split core settings from ACE64Aud.ini into new ACE64Emu.ini and add new GFXAUDIO section
+•	migrate ACE64, MyGlide64, MyAud, MyInput and its related solution files from VS2008 to VS2013
+
 
