@@ -1,0 +1,149 @@
+40 Winks
+•	fix incorrect vi height regression on 2nd & 3rd intro screen
+Banjo Kazooie
+•	fix flickers when intro white screen transition disperse
+•	fix the unwanted bg image during intro puzzle transition
+Banjo Tooie
+•	fix long cutscene random hang
+Battlezone
+•	fix green text box extra bottom line regression
+•	remove black frame borders for maximum visual display
+Body Harvest
+•	fix audio popping on intro text screen and audio slowdown on fb transition effect screen
+•	fix gfx-audio sync e.g. spacecraft landing etc
+California Speed
+•	fix popping music at max VI/s
+Conker BFD
+•	fix the thin rect lines around Conker against certain ground texture
+•	fix left frame border gap e.g. Scaredy Birdy motionblur cutscene
+•	fix right frame border gap
+Cruis’N World
+•	fix popping audio
+DerbyStallion 64
+•	fix flashram game save, cheat no longer required
+Evangelion
+•	fix bilinear lines corruption
+•	remove black frame borders for maximum visual display
+F1 Pole Position 64
+•	remove vi height fix (no longer required) for intro transition bottom frame border gap
+F-ZeroX
+•	fix slowdown from framebuffer transition effects
+Fighting Force 64
+•	fix slow game speed
+Goemon’s Great Adventure
+•	remove vi width fix (no longer required) for the intro cutscene transition gap
+•	fix intro cutscene moving floor texture inside the house
+GoldenEye
+•	simplify the fix for left frame border gap
+Hexen
+•	fix missing text in intro fire scene when primedepth > 0
+•	remove left, right and top black frame borders for maximum visual display
+Indy Racing 2000
+•	apply new fix for missing portion of the options menu screen
+In-Fisherman Bass Hunter 64
+•	fix audio popping when driving boat during demo mode or gameplay
+Jet Force Gemini
+•	remove vi height fix (no longer required) for the intro menu bottom frame border gap flickering
+Killer Instinct Gold
+•	fix far plane moving ground texture e.g. "Supreme Victory"
+•	fix right frame border gap / corruption e.g. "Supreme Victory"
+•	fix broken green health bar regression
+  o	set 32bit to "NO"
+Knife Edge
+•	fix game double speed
+Mario Golf
+•	fix  training screen black frame corruption when selecting hole to play(fast forward select)
+MarioParty
+•	fix intro cutscene bg image vi width bug before game starts
+MarioParty2
+•	fix intro cutscene bg image vi width bug before game starts
+MarioParty 3
+•	fix bilinear green outline
+•	fix line gap during frame black strips transition
+Micromachines
+•	fix old regression where the text box right white frame is oversized / selected challenge text box white right frame is missing
+Mystical Ninja 2
+•	remove vi width fix (no longer required) for the intro cutscene transition gap
+•	fix intro cutscene moving floor texture inside the house
+Nightmare Creatures
+•	fix inconsistent speed timing e.g. intro cutscene
+•	fix popping noise
+Ogre Battle 64
+•	fix intro moving fog line gap regression
+Perfect Dark
+•	fix screen flickering regression  after pause / unpause menu when using camspy
+•	fix camspy flickering top / bottom frame border
+Pilot Wings 64
+•	remove vi height fix (no longer required) for top frame border gap
+•	enhance clear buffer fix so that photos on EverFrost & other levels are not cleared
+Quake 64
+•	fix long delay before gameplay starts
+•	fix intro popping music at max VI/s
+Quake II
+•	fix bottom frame border (removed accidentally from v9.5 release)
+  o	fix the text bottom pixel cutoff at the intro fb effect screen
+•	fix the underwater fb texture effect
+•	fix random slowdown on intro screen after certain game
+South Park Rally(E)
+•	fix gfx-audio out-of-sync
+Tarzan
+•	remove black frame borders to fix bg image moving thin black strip on left border when camera moves
+•	fix right frame border gap on intro options menu screen
+Wildwater
+•	remove black frame borders for maximum visual display
+Zelda – Majoras' Mask
+•	fix the lines inside the intro N64 text (same as ZOOT fix in v9.5)
+•	fix vi height where the pause menu text box did not disappear completely after unpause
+•	revert an old change
+  o	fix the slight screen "jump" when entering/exit pause menu (should help other games as well)
+Zelda - Ocarina Of Time 
+•	fix long delay in pause menu, subscreen delay cheat no longer required
+•	fix bilinear frame border line gap on Link’s pause menu portrait
+•	revert an old change
+  o	fix the slight screen "jump" when entering/exit pause menu (should help other games as well)
+Misc.
+•	revert an old change to improve game speed e.g. Quake II etc
+•	implement dynamic xy scale factor plus to fine tune specific game auto adjust for different resolution and aspect ratio changes e.g.
+  o	40 Winks, Aidyn Chronicles, All-Star Baseball 2000/1, Armorines Project S., Armymen AirCombat, Armymen Sarge 2, Banjo Kazooie, Bomberman Hero,
+  o	Bomberman64U/E, Conker, Donald Duck, Dragon Storm, Evangelion, F1 Pole Position 64, Flying Dragon, Hexen, ISS 2000, Indy Racing 2000,
+  o	Jet Force Gemini, Ken Griffey Slugfest, Killer Instinct Gold, Lego Racers, Mario Party 3, Mario Tennis, MRC, Ms. Pac-Man MM, Mystical Ninja,
+  o	NFL Blitz 2000, NFL Blitz Special Edition, NFL QBC 99 / 98, Ogre Battle 64, Perfect Dark, Pilot Wings 64,Pokemon Stadium 2, Power Rangers,
+  o	PPL, Quake II, Resident Evil II, Starcraft, SuperRobotSpirits, Tarzan, Turok Rage Wars, Turok Seeds of Evil, V-Rally, Virtual Pro Wrestling 2,
+  o	WCW Revenge, WCW World Tour, WWF No Mercy, Xena Warrior Princess, Zelda Majoras' Mask, Zelda Ocarina of Time
+•	rewrite thin line handling codes
+  o	fix Jet Force Gemini old regression for weapon energy bar
+  o	fix Perfect Dark thick aiming line for Co-operative mode
+  o	improve thin line size accuracy
+•	rewrite ci copy & old copy handling codes
+•	rewrite ci aux copy handling codes
+  o	fix unnecessary slowdown e.g. Mystical Ninja Controller Pak / Option menu screen
+  o	prevent regression e.g. Mystical Ninja Controller Pak / Option menu screen
+•	remove settings.old_style_adither option (no longer required)
+•	noise handling enhancement
+  o	fix Bomberman64 missing noise for Bomberman planet hologram in intro cutscene
+  o	fix Starfox64 missing noise during intro cutscene and scene transition
+•	implement removal of black frame borders for maximum visual display
+  o	40 Winks, Battlezone, Bomberman64U/E, Evangelion, Hexen, Indy Racing 2000, Mystical Ninja, Tarzan, Wildwater, Win Back
+•	rewrite color image clearing / fb set logic
+  o	fix previous game fb color image not cleared in current game
+    e.g. TSUMI TO BATSU after Zelda OOT pause menu or Toys Story kill enemy
+•	disable moving / dragging screen when rom is loaded(OddMlan bug report)
+•	fix no audio trying to load non-existent savestate
+•	fix loss of gameplay audio after loading savestate e.g. Tarzan, Hydro Thunder etc
+•	remove “Speedup Timing” option
+  o	replaced by VIcount and gfxIO option
+•	rewrite audio plugin synchronization codes
+•	enhance core audio and audio plugin synchronization logic
+•	implement dynamic xy ratio to auto adjust fixes for different resolution changes
+•	add new 1400x1050 (4:3) resolution
+•	fix Pokemon Stadium 2 stadium battle hang regression
+•	fix image VI width corruption regression after frame transition for expansion pak
+  o	e.g. Rayman 2, Donald Duck
+•	fix Cuis’n World regression where the intro N logo get cutoff if rom is started again within the same emu session
+•	remove winproc override and window_changed variable (no longer required)
+•	remove unreliable CheckDRAMSize, get directly from core
+•	cleanup and refactor audio initialization codes and get rdram size directly from core instead of ini file
+•	split core settings from ACE64Aud.ini into new ACE64Emu.ini and add new GFXAUDIO section
+•	migrate ACE64, MyGlide64, MyAud, MyInput and its related solution files from VS2008 to VS2013
+
+
